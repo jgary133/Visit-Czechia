@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans serif;
+    font-family: Arial, sans-serif;
     background-color:#f5f5f5;
 }
 .destinations-grid {
@@ -42,10 +42,31 @@ body {
     text-decoration:none;
     border-radius: 20px;
 }
+.index-destinations-grid a {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 14px;
+    background-color:darkslategray;
+    color:blanchedalmond;
+    text-decoration:none;
+    border-radius: 20px;
+    text-align:center;
+    line-height: 2;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
 .destinations-grid article a:hover {
-    opacity: 0,8;
+    opacity: 0.8;
     color:darkslategray;
     background-color:blanchedalmond;
+}
+.index-destinations-grid a:hover {
+    opacity: 0.8;
+    color:darkslategray;
+    background-color:blanchedalmond;
+}
+.index-destinations-grid {
+    text-align:center;
 }
 @media (max-width: 900px) {
     .destinations-grid {
@@ -53,8 +74,8 @@ body {
     }
 }
 @media (max-width: 600px) {
-    .destinations.grid {
-        grid-template-columns: 1fr
+    .destinations-grid {
+        grid-template-columns: 1fr;
     }
 }
 nav {
@@ -105,5 +126,10 @@ header a:hover {
     background-color:blanchedalmond;
     color:darkslategray;
 }
-
+#destinations {
+    text-align:center;
+}
+.index-card-title {
+    text-align:center;
+}
 
