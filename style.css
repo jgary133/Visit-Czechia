@@ -262,6 +262,41 @@ header a:hover {
 .back-to-destinations a:hover {
     color: #555;
 }
+.czechia-map img {
+    width: 100%;
+    max-width: 700px;
+    height:auto;
+    display:block;
+    margin: 0;
+}
+.cities-map-section {
+    text-align:center;
+}
+.city-point {
+    display:block;
+    width: 14px;
+    height: 14px;
+    background-color:darkorange;
+    border: 2px solid white;
+    border-radius: 50%;
+    position:absolute;
+}
+.prague-point {
+    cursor:default;
+    left: 35%;
+    top: 42%;
+}
+.ostrava-point {
+    left: 85%;
+    top: 48%;
+}
+.czechia-map {
+    position:relative;
+    width: fit-content;
+    max-width: 100%;
+    margin: 30px auto;
+}
+
 
 
 
