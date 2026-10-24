@@ -290,11 +290,82 @@ header a:hover {
     left: 85%;
     top: 48%;
 }
+.brno-point {
+    left: 64%;
+    top: 67%;
+} 
+.plzen-point {
+    left: 21%;
+    top: 50%;
+}
+.budejovice-point {
+    left:33%;
+    top: 74%;
+}
+.liberec-point {
+    left:43%;
+    top:20%;
+}
+.hradec-point {
+    left:55%;
+    top:38%;
+}
+.pardubice-point {
+    left: 54%;
+    top: 42%;
+}
+.zlin-point {
+    left:78%;
+    top:68%;
+}
+.jihlava-point {
+    left: 49%;
+    top: 60%;
+}
+.olomouc-point {
+    left:73%;
+    top:53%;
+}
+.karlovy-vary-point {
+    left: 14%;
+    top:34%;
+}
+.kutna-hora-point {
+    left: 45%;
+    top: 44%;
+}
+.usti-point {
+    left:28%;
+    top:25%;
+}
 .czechia-map {
     position:relative;
     width: fit-content;
     max-width: 100%;
     margin: 30px auto;
+}
+.city-point::after {
+    content:attr(data-city);
+    position:absolute;
+    bottom:180%;
+    left:50%;
+    transform: translateX(-50%);
+    background-color:white;
+    color:darkslategray;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    white-space:normal;
+    width:170px;
+    opacity:0;
+    visibility:hidden;
+    transition: opacity 0.2s ease, bottom 0.2 easy;
+    z-index:10;
+}
+.city-point:hover::after {
+    opacity: 1;
+    visibility:visible;
+    bottom:150%;
 }
 
 
