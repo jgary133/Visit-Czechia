@@ -451,6 +451,128 @@ header a:hover {
     margin:25px auto 0;
     border-radius: 12px;
 }
+.nature-hero {
+    position:relative;
+    height: 600px;
+    overflow:hidden;
+}
+.nature-hero img {
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+    display:block;
+    border-radius:10px;
+}
+.nature-hero-text {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:white;
+    text-align:center;
+    width:80%;
+    max-width:800px;
+    z-index:1;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8)
+}
+.nature-hero-text h1 {
+    font-size:52px;
+    margin-bottom:20px;
+}
+.nature-hero-text p {
+    font-size:20px;
+    line-height:1.6;
+}
+.nature-overview {
+    padding: 70px 10%;
+    text-align:center;
+}
+.nature-overview h2 {
+    font-size: 36px;
+    margin-bottom:15px;
+}
+.nature-intro {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.nature-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:25px;
+}
+.nature-overview-card {
+    padding:25px;
+    background-color: #e3ecdf;
+    border: 1px solid #c5d8bd;
+    border-radius:10px;
+    transition:transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.nature-overview-card:hover {
+    transform:translateY(-8px);
+    background-color:#d5e5ce;
+    box-shadow: 0 10px 25px rgba(40, 75, 45, 0.15);
+}
+.nature-overview-card h3 {
+    margin-bottom:15px;
+    color:#234b2c;
+}
+.nature-overview-card p {
+    line-height:1.6;
+}
+.national-parks {
+    padding: 70px 10%;
+    text-align:center;
+}
+.national-parks h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.national-parks-grid {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+    margin-top: 40px;
+}
+.national-park-card {
+    background-color:#e3ecdf;
+    border: 1px solid #c5d8bd;
+    border-radius:12px;
+    overflow:hidden;
+    text-align:left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.national-park-card:hover {
+    transform:translateY(-8px);
+    box-shadow: 0 10px 25px rgba(40, 75, 45, 0.15);
+}
+.national-park-card img {
+    width: 100%;
+    height: 280px;
+    object-fit:cover;
+    display:block;
+}
+.national-park-content {
+    padding: 25px;
+}
+.national-prak-content h3 {
+    color: #234b2c;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.national-park-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.park-highlight {
+    color:#365b3b;
+}
+.park-link {
+    display: inline-block;
+    color:#234b2c;
+    font-weight:bold;
+    text-decoration:none;
+    margin-top: 5px;
+}
 
 
 
