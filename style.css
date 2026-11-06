@@ -68,16 +68,6 @@ body {
 .index-destinations-grid {
     text-align:center;
 }
-@media (max-width: 900px) {
-    .destinations-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 600px) {
-    .destinations-grid {
-        grid-template-columns: 1fr;
-    }
-}
 nav {
     display: flex;
     justify-content: center;
@@ -572,6 +562,74 @@ header a:hover {
     font-weight:bold;
     text-decoration:none;
     margin-top: 5px;
+}
+.natural-wonders {
+    padding: 60px 8%;
+    text-align:center;
+}
+.natural-wonders h2 {
+    font-size:36px;
+    margin-bottom:20px;
+}
+.natural-wonders > p {
+    font-size:18px;
+    margin-bottom:35px;
+}
+.natural-wonders-grid {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.natural-wonder-card {
+    background-color:#e3ecdf;
+    border: 1px solid #c5d8bd;
+    border-radius:12px;
+    overflow:hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.natural-wonder-card:hover {
+    transform:translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.natural-wonder-card img {
+    width:100%;
+    height: 250px;
+    object-fit:cover;
+    display:block;
+}
+.natural-wonder-card h3 {
+    font-size:22px;
+    color: #234b2c;
+    margin: 20px 15px 10px;
+}
+.natural-wonder-card p {
+    font-size:16px;
+    line-height: 1.6;
+    padding: 0 20px 20px;
+}
+@media (max-width: 900px) {
+    .destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nature-overview-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+    .national-parks-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .natural-wonders-grid {
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .destinations-grid {
+        grid-template-columns: 1fr;
+    }
+    .nature-overview-grid,
+    .national-parks-grid,
+    .natural-wonders-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 
